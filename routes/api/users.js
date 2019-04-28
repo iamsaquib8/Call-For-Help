@@ -24,7 +24,7 @@ router.get('/current', passport.authenticate('jwt', {session: false}), (req, res
 //@desc resgister post route
 //@access Public
 router.post('/register', (req, res) => {
-    // console.log(req.body)
+    console.log(req.body)
     User
         .findOne({email: req.body.email} )
         .then(user => {
