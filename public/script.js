@@ -1,4 +1,4 @@
-const url = 'http://localhost:8080';
+const url = 'https://safe-lowlands-92086.herokuapp.com/';
 const register = ()=> {
     const name= document.getElementById('registerName').value;
     const email = document.getElementById('registerEmail').value;
