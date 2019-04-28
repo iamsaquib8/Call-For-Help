@@ -31,14 +31,18 @@ mongoose
 //WebPage
 app.use(express.static(__dirname + '/public'));
 
-// app.set('views', __dirname + '/public');
-
+app.get('/hello', (req, res) => {
+    res.send('Hello world')
+})
 //Use Routes
 app.use('/api/users', users);
 app.use('/api/help', help);
 
 const port = process.env.PORT || 8080;
 
-app.listen(port, () => {
-    console.log(`App is Running on ${port}`);
-})
+const server = app.listen(process.env.PORT || 8080, function () {
+    const port = server.address().port;
+    console.log("Express is working on port " + port);
+  });
+
+  module.exports = server;
