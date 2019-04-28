@@ -13,7 +13,4 @@ Running locally
 
 npm start
 
-Deploying to App Engine
-
-npm run deploy
 
