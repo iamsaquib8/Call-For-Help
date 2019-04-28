@@ -1,4 +1,4 @@
-const url = 'https://safe-lowlands-92086.herokuapp.com';
+const url = 'https://callforhelp.appspot.com';
 const register = ()=> {
     const name= document.getElementById('registerName').value;
     const email = document.getElementById('registerEmail').value;
